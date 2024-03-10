@@ -2,7 +2,6 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { lusitana } from '@/app/ui/fonts';
 
 export default function Page() {
   return (
@@ -20,9 +19,7 @@ export default function Page() {
               />
             </div>
             <div className="row-span-2">
-              <strong
-                className={`${lusitana.className} mt-[-20px] text-[16px] xl:text-[40px]`}
-              >
+              <strong className={`mt-[-20px] text-[16px] xl:text-[40px]`}>
                 <p className="text-center">
                   Welcome to finance dashboard project !!
                 </p>
