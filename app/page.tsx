@@ -1,5 +1,5 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
-
+import { lusitana } from './ui/fonts';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -19,7 +19,9 @@ export default function Page() {
               />
             </div>
             <div className="row-span-2">
-              <strong className={`mt-[-20px] text-[16px] xl:text-[40px]`}>
+              <strong
+                className={`${lusitana.className} mt-[-20px] text-[16px] xl:text-[40px]`}
+              >
                 <p className="text-center">
                   Welcome to finance dashboard project !!
                 </p>
@@ -33,7 +35,7 @@ export default function Page() {
               <div className="mt-5 flex w-full justify-center xl:mt-10">
                 <Link
                   href="/login"
-                  className="mt-3 flex w-[150px] items-center gap-3 rounded-lg bg-blue-500 px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+                  className="mt-3 flex w-[150px] items-center gap-3 rounded-lg bg-gray-800 px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-700 md:text-base"
                 >
                   <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
                 </Link>
