@@ -1,6 +1,4 @@
-import CardWrapper, {
-  Card,
-} from '@/app/(Frontend)/ui/Page-components/dashboard/cards';
+import CardWrapper from '@/app/(Frontend)/ui/Page-components/dashboard/cards';
 import RevenueChart from '@/app/(Frontend)/ui/Page-components/dashboard/revenue-chart';
 import LatestInvoices from '@/app/(Frontend)/ui/Page-components/dashboard/latest-invoices';
 import { lusitana } from '@/app/(Frontend)/ui/fonts';

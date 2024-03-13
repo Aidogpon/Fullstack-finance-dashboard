@@ -45,7 +45,7 @@ export default function Page() {
                 <p className="text-center text-[10px] text-gray-600 xl:text-[11px]">
                   You can see the instructions for access at the{' '}
                   <Link
-                    href="https://github.com/Aidogpon/nextjs-financial-dashboard"
+                    href="https://github.com/Aidogpon/Nextjs-finance-dashboard"
                     className="text-blue-400"
                   >
                     Github-repository
