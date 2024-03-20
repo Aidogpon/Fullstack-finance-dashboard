@@ -9,10 +9,10 @@ import {
   UserCircleIcon,
 } from '@heroicons/react/24/outline';
 import { Button } from '@/app/(Frontend)/ui/components/button';
-
 import { useFormState } from 'react-dom';
 import { createInvoice } from '@/app/(Backend)/actions/invoiceAction/actions';
 
+// รับ customers เป็น parameter เพื่อ แสดงรายชื่อลูกค้าทั้งหมดเป็นตัวเลือกที่จะสร้าง invoice
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState = { message: null, errors: {} };
   const [state, dispatch] = useFormState(createInvoice, initialState);

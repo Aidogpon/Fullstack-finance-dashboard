@@ -1,11 +1,11 @@
 import { sql } from '@vercel/postgres';
 import { CustomerField } from '../../definitions';
 import { unstable_noStore as noStore } from 'next/cache';
-// ฟังก์ชันสำหรับดึงข้อมูลลูกค้า
+// ฟังก์ชันสำหรับดึงข้อมูลลูกค้า ใช้หน้า create page
 export default async function fetchCustomers() {
   noStore();
   try {
-    // ดึงข้อมูลลูกค้าทั้งหมดจากฐานข้อมูล
+    // ดึงข้อมูลลูกค้าทุกคนเพื่อแสดงใน form
     const data = await sql<CustomerField>`
         SELECT
           id,

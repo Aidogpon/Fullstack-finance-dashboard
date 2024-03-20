@@ -3,7 +3,7 @@ import { CustomersTableType } from '../../definitions';
 import { sql } from '@vercel/postgres';
 import { formatCurrency } from '../../lib/utils';
 
-// ฟังก์ชันสำหรับดึงข้อมูลลูกค้าตามเงื่อนไขการค้นหา
+// ฟังก์ชันสำหรับดึงข้อมูลลูกค้าตามเงื่อนไขการค้นหา ด้วย SearchParams
 export default async function fetchFilteredCustomers(query: string) {
   noStore(); // ป้องกันการเก็บข้อมูลใน cache
   try {

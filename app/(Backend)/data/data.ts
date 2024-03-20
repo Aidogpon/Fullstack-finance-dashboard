@@ -6,11 +6,11 @@ import {
   fetchInvoicesPages,
 } from './invoices/fetchInvoicesPage';
 import fetchInvoiceById from './invoices/fetchInvoiceById';
-
 import fetchLatestInvoices from './invoices/fetchLatestInvoice';
 import fetchRevenue from './revenue/fetchRevenue';
 import getUser from './users/getUser';
 
+//รวมทุกคำสั่งไว้ที่เดียว
 export {
   fetchCardData,
   fetchCustomers,

@@ -1,22 +1,23 @@
 'use client';
-
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useDebouncedCallback } from 'use-debounce';
 
 export default function Search({ placeholder }: { placeholder: string }) {
-  const searchParams = useSearchParams();
-  const pathname = usePathname();
-  const { replace } = useRouter();
+  const searchParams = useSearchParams(); // เข้าถึงพารามิเตอร์การค้นหาใน URL
+  const pathname = usePathname(); // เข้าถึงเส้นทางปัจจุบันใน URL
+  const { replace } = useRouter(); // เข้าถึงฟังก์ชันสำหรับการเปลี่ยนแปลงเส้นทาง
 
   const handleSearch = useDebouncedCallback((term) => {
     const params = new URLSearchParams(searchParams);
-    params.set('page', '1');
+    params.set('page', '1'); // ตั้งค่าหน้าเป็น 1 เมื่อเริ่มการค้นหาใหม่
+
     if (term) {
-      params.set('query', term);
+      params.set('query', term); // เพิ่มหรืออัพเดทคำค้นหา
     } else {
-      params.delete('query');
+      params.delete('query'); // ลบคำค้นหาถ้าไม่มีการใส่คำค้นหา
     }
+    // อัพเดท URL โดยไม่ต้องโหลดหน้าใหม่
     replace(`${pathname}?${params.toString()}`);
   }, 300);
 
