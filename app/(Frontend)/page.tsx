@@ -35,14 +35,14 @@ export default function Page() {
               <div className="mt-5 flex w-full justify-center xl:mt-10">
                 <Link
                   href="/dashboard"
-                  className="mt-3 flex w-[150px] items-center gap-3 rounded-lg bg-gray-800 px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-700 md:text-base"
+                  className="mt-3 flex w-[121px] items-center gap-3 rounded-lg bg-gray-800 px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-700 md:text-base lg:w-[135px] xl:w-[150px]"
                 >
                   <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
                 </Link>
               </div>
 
               <div className="mt-5 flex w-full justify-center">
-                <p className="text-center text-[10px] text-gray-600 xl:text-[11px]">
+                <p className="text-center text-[9px] text-gray-600 xl:text-[11px]">
                   You can see the instructions for access at the{' '}
                   <Link
                     href="https://github.com/Aidogpon/Nextjs-finance-dashboard"
